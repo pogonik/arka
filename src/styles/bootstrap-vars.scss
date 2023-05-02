@@ -1,0 +1,39 @@
+@import 'https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
+
+$body-bg: #FFF;
+
+$red: #d71d45;
+$blue: #254260;
+$light-blue: #eaf4ff;
+$text-red: #ff1d45;
+$link-color: #d71d45;
+
+$font-body: 'Barlow', sans-serif;
+$font-heading: 'Barlow Condensed', sans-serif;
+$font-title: 'Barlow Semi Condensed', sans-serif;
+
+$font-weight-light: 400;
+$font-weight-normal: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+$font-family-sans-serif: $font-body;
+$font-family-base: $font-body;
+
+$headings-font-family: 'Barlow Condensed', sans-serif;
+
+$btn-link-color: $red;
+$secondary: $red;
+$background: $red;
+
+$offcanvas-horizontal-width: 400px;
+
+@media (max-width: 576px) {
+  $offcanvas-horizontal-width: 300px;
+}
+
+$spinner-width: 3rem;
+$spinner-height: 3rem;
+
+@import 'bootstrap/scss/bootstrap.scss';

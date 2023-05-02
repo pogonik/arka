@@ -1,0 +1,70 @@
+{
+  "id": "kontakt_banner",
+  "type": "SharedSlice",
+  "name": "KontaktBanner",
+  "description": "KontaktBanner",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "KontaktBanner",
+      "primary": {
+        "adresa_ikonica": {
+          "type": "Image",
+          "config": {
+            "label": "Adresa ikonica",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "adresa": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Adresa",
+            "placeholder": "Adresa",
+            "allowTargetBlank": false,
+            "multi": "paragraph"
+          }
+        },
+        "telefon_ikonica": {
+          "type": "Image",
+          "config": {
+            "label": "Telefon ikonica",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "telefoni": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Telefoni",
+            "placeholder": "Telefoni",
+            "allowTargetBlank": false,
+            "multi": "paragraph"
+          }
+        },
+        "e_mail_ikonica": {
+          "type": "Image",
+          "config": {
+            "label": "E-mail ikonica",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "e_mail": {
+          "type": "StructuredText",
+          "config": {
+            "label": "E-mail",
+            "placeholder": "E-mail",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

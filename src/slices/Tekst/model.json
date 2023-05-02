@@ -1,0 +1,77 @@
+{
+  "id": "tekst",
+  "type": "SharedSlice",
+  "name": "Tekst",
+  "description": "Tekst",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Tekst",
+      "primary": {},
+      "items": {
+        "sadrzaj": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Sadržaj",
+            "placeholder": "Sadržaj",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item,image,heading2"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "tekstSaSlikom",
+      "name": "Tekst sa slikom",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Tekst",
+      "primary": {
+        "naslov": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Naslov",
+            "placeholder": "Naslov",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,strong,em"
+          }
+        },
+        "slika_uzglavlje": {
+          "type": "Image",
+          "config": {
+            "label": "Slika za uzglavlje",
+            "constraint": {
+              "width": 1920,
+              "height": 375
+            },
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "sadrzaj": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Sadržaj",
+            "placeholder": "Sadržaj",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item,image,heading2"
+          }
+        },
+        "slika": {
+          "type": "Image",
+          "config": {
+            "label": "Slika",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

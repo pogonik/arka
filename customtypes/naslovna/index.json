@@ -1,0 +1,74 @@
+{
+  "id": "naslovna",
+  "label": "Naslovna",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID",
+          "placeholder": "UID"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "banner1": {
+              "type": "SharedSlice"
+            },
+            "kontakt_banner": {
+              "type": "SharedSlice"
+            },
+            "slider": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Meta Data": {
+      "page_title": {
+        "type": "Text",
+        "config": {
+          "label": "Naslov strane",
+          "placeholder": "Naslov strane"
+        }
+      },
+      "meta_keywords": {
+        "type": "Text",
+        "config": {
+          "label": "Ključne reči (razdvojene zarezom)",
+          "placeholder": "Ključne reči"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Tekst ukratko (1 pasus ili 2-3 rečenice)",
+          "placeholder": "Tekst ukratko"
+        }
+      },
+      "meta_image": {
+        "type": "Image",
+        "config": {
+          "label": "Slika strane",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {},
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "sadrzaj",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Non qui laborum do excepteur cupidatat reprehenderit fugiat. Anim irure deserunt sit mollit magna in eu pariatur amet laboris est ullamco deserunt. Esse occaecat nostrud occaecat Lorem aliquip dolore Lorem culpa proident."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "tekstSaSlikom",
+    "primary": {
+      "naslov": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading2",
+            "content": {
+              "text": "Figure"
+            }
+          }
+        ]
+      },
+      "slika_uzglavlje": {
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0",
+          "width": 3344,
+          "height": 2509
+        },
+        "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?rect=0%2C928%2C3344%2C653&w=1920&h=375",
+        "width": 1920,
+        "height": 375,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 928
+          },
+          "background": "transparent"
+        },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
+        "thumbnails": {}
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "sadrzaj",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Dolore irure in veniam duis incididunt aute nisi est consectetur sunt excepteur cillum fugiat sunt incididunt. Pariatur eu veniam esse dolore consectetur do voluptate dolore minim consectetur aute."
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "slika",
+            {
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+                "width": 3648,
+                "height": 4560
+              },
+              "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+              "width": 3648,
+              "height": 4560,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "credits": null,
+              "alt": null,
+              "__TYPE__": "ImageContent",
+              "thumbnails": {}
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

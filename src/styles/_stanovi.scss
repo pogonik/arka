@@ -1,0 +1,152 @@
+.stanovi, .real-estate {
+  .stan {
+    margin-bottom: 2rem;
+
+    .card {
+      display: flex;
+      
+      box-shadow: 0 0 10px rgba(0,0,0,.35);
+      border: 0;
+      padding: 1rem;
+      border-radius: .65rem;
+
+      .card-body {
+        padding: 0 1rem .5rem;
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+          font-size: 2.25rem;
+          color: $blue;
+          font-family: 'Barlow Semi Condensed';
+          font-weight: 700;
+          margin-bottom: 1rem;
+          line-height: 1;
+        }
+      }
+
+      .slika {
+        overflow: hidden;
+
+        @include media-breakpoint-down(md) {
+          margin-bottom: 1rem;
+        }
+
+        .img-fluid {
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .ratio {
+          display: block;
+          border-radius: 6px;
+          background: $white;
+          overflow: hidden;
+
+          @media (min-width: 540px) {
+            --bs-aspect-ratio: 75%;
+          }
+
+          --bs-aspect-ratio: 56.25%;
+        }
+      }
+      @media (min-width: 540px) {
+        flex-direction: row;
+      }
+
+      & > .col {
+        @media (min-width: 540px) and (max-width: 768px) {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+
+  .modal-fullscreen {
+    .modal-body {
+      overflow-y: inherit;
+    }
+  }
+
+  .modal {
+    &.show {
+
+      .slick-slider {
+        max-height: calc(100vh - 150px);
+        height: calc(100vh - 150px);
+
+        .slide {
+          max-height: calc(100vh - 150px);
+          height: calc(100vh - 150px);
+          overflow: hidden;
+
+          img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .slick-arrow {
+          width: 20px;
+          height: 40px;
+          opacity: .5;
+          background-size: cover;
+
+          @media (max-width: 768px) {
+            &.slick-next {
+              right: 5px;
+            }
+
+            &.slick-prev {
+              left: 5px;
+            }
+          }
+        }
+
+        .slick-prev {
+          background: url('../../public/icons/prev-dark-arrow.svg') center center no-repeat;
+          left: 5px;
+          z-index: 100;
+
+          &:hover {
+            background: url('../../public/icons/prev-dark-arrow.svg') center center no-repeat;
+            opacity: 1;
+          }
+        }
+        .slick-next {
+          background: url('../../public/icons/next-dark-arrow.svg') center center no-repeat;
+          right: 5px;
+          z-index: 100;
+
+          &:hover {
+            background: url('../../public/icons/next-dark-arrow.svg') center center no-repeat;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .modal-dialog {
+      max-width: 85vw;
+
+      @include media-breakpoint-down(md) {
+        max-width: 90vw;
+      }
+
+      .modal-body {
+        padding: .25rem;
+      }
+    }
+
+    .btn-close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+}

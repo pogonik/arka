@@ -1,0 +1,25 @@
+.kontakt, .contact {
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 0;
+
+  .tekst {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+
+    @include media-breakpoint-between(md,lg) {
+      max-width: 720px;
+    }
+
+    @include media-breakpoint-between(lg,xl) {
+      max-width: 960px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: 1120px;
+    }
+  }
+}

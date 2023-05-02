@@ -1,0 +1,38 @@
+@function get-vw($target) { 
+  $vw-context: (1000*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+
+$con-width: get-vw(72px);
+
+.article {
+  margin-bottom: 3rem;
+
+  .article-image {
+    margin-bottom: 2rem;
+
+    & > .article-pic {
+      --bs-aspect-ratio: 45%;
+      display: block;
+      width: 100%;
+
+      & > .img-fluid {
+        object-fit: cover;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .block-img {
+    img {
+      // width: 100%;
+      // height: 100%;
+      object-fit: cover;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

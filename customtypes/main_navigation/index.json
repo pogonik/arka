@@ -1,0 +1,32 @@
+{
+  "id": "main_navigation",
+  "label": "MainNavigation",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "nav": {
+        "type": "Group",
+        "config": {
+          "label": "Navigacija",
+          "fields": {
+            "naslov": {
+              "type": "Text",
+              "config": {
+                "label": "Naslov",
+                "placeholder": "Naslov"
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "select": "document"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

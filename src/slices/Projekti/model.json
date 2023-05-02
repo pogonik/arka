@@ -1,0 +1,53 @@
+{
+  "id": "projekti",
+  "type": "SharedSlice",
+  "name": "Projekti",
+  "description": "Projekti",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Projekti",
+      "primary": {
+        "podnaslov": {
+          "type": "Text",
+          "config": {
+            "label": "Podnaslov",
+            "placeholder": "Podnaslov"
+          }
+        },
+        "naslov": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Naslov",
+            "placeholder": "Naslov",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "opis": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Opis",
+            "placeholder": "Opis",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink,heading3,heading4,heading5,strong,em,image,list-item,o-list-item"
+          }
+        }
+      },
+      "items": {
+        "slika": {
+          "type": "Link",
+          "config": {
+            "label": "Slika",
+            "placeholder": "Slika",
+            "select": "media"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

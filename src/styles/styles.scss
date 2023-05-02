@@ -1,0 +1,45 @@
+@import './bootstrap-vars.scss';
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1200px,
+  xl: 1600px,
+  xxl: 1920px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1140px,
+  xl: 1400px,
+  xxl: 1800px
+) !default;
+
+body {
+  font-size: 1.05rem;
+}
+
+@import 'button';
+@import 'top-links';
+@import 'navbar';
+@import 'banner';
+
+@import 'slick';
+@import 'slick-theme';
+@import 'homepage-slider';
+@import 'page-header';
+@import 'article';
+@import 'stanovi';
+@import 'materijali';
+@import 'kontakt';
+@import 'footer';
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}

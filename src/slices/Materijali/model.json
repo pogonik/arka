@@ -1,0 +1,53 @@
+{
+  "id": "materijali",
+  "type": "SharedSlice",
+  "name": "Materijali",
+  "description": "Materijali",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Materijali",
+      "primary": {
+        "podnaslov": {
+          "type": "Text",
+          "config": {
+            "label": "Podnaslov",
+            "placeholder": "Podnaslov"
+          }
+        },
+        "naslov": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Naslov",
+            "placeholder": "Naslov",
+            "allowTargetBlank": false,
+            "single": "heading2"
+          }
+        },
+        "opis": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Opis",
+            "placeholder": "Opis",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,heading4,heading5,em,strong,hyperlink,image,list-item,o-list-item"
+          }
+        }
+      },
+      "items": {
+        "slike": {
+          "type": "Image",
+          "config": {
+            "label": "Slike",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

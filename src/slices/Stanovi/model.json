@@ -1,0 +1,54 @@
+{
+  "id": "stanovi",
+  "type": "SharedSlice",
+  "name": "Stanovi",
+  "description": "Stanovi",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Stanovi",
+      "primary": {
+        "naslov": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Naslov",
+            "placeholder": "Naslov",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "opis": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Opis",
+            "placeholder": "Opis",
+            "allowTargetBlank": true,
+            "multi": "paragraph,em,strong,heading5,heading4,heading3,hyperlink,image,list-item,o-list-item"
+          }
+        }
+      },
+      "items": {
+        "slike": {
+          "type": "Image",
+          "config": {
+            "label": "Slike",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "slika": {
+          "type": "Link",
+          "config": {
+            "label": "Slika",
+            "placeholder": "Slika",
+            "select": "media"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

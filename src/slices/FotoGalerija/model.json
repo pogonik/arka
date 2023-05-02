@@ -1,0 +1,38 @@
+{
+  "id": "foto_galerija",
+  "type": "SharedSlice",
+  "name": "FotoGalerija",
+  "description": "FotoGalerija",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "FotoGalerija",
+      "primary": {},
+      "items": {
+        "slika": {
+          "type": "Image",
+          "config": {
+            "label": "Slika",
+            "constraint": {},
+            "thumbnails": [
+              {
+                "name": "thumbnail",
+                "width": 150,
+                "height": 150
+              },
+              {
+                "name": "medium",
+                "width": 500,
+                "height": 500
+              }
+            ]
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "kontakt_forma",
+  "type": "SharedSlice",
+  "name": "KontaktForma",
+  "description": "KontaktForma",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "KontaktForma",
+      "primary": {
+        "naslov": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Naslov",
+            "placeholder": "Naslov",
+            "allowTargetBlank": false,
+            "single": "heading2,strong,em"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

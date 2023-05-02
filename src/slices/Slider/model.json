@@ -1,0 +1,68 @@
+{
+  "id": "slider",
+  "type": "SharedSlice",
+  "name": "Slider",
+  "description": "Slider",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Slider",
+      "primary": {},
+      "items": {
+        "podnaslov": {
+          "type": "Text",
+          "config": {
+            "label": "Podnaslov",
+            "placeholder": "Podnaslov"
+          }
+        },
+        "naslov": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Naslov",
+            "placeholder": "Naslov",
+            "allowTargetBlank": false,
+            "multi": "heading2,strong,em,hyperlink"
+          }
+        },
+        "opis": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Opis",
+            "placeholder": "Opis",
+            "allowTargetBlank": false,
+            "multi": "paragraph,strong,em"
+          }
+        },
+        "slika": {
+          "type": "Image",
+          "config": {
+            "label": "Slika",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "dugme_tekst": {
+          "type": "Text",
+          "config": {
+            "label": "Dugme Tekst",
+            "placeholder": "Dugme Tekst"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "Izaberite link",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}
