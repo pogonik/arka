@@ -1,5 +1,5 @@
 import { useState, useEffect, Suspense } from 'react'
-import { useParams } from "react-router-dom";
+import { useParams, useMatches } from "react-router-dom";
 import { client } from './prismicio'
 import { langs, base_url } from './utils/lib'
 import Layout from './components/Layout'; 
@@ -16,19 +16,21 @@ const App = props => {
   const [metaData, setMetaData] = useState({});
 
   let winWidth = useResize();
-  let {lang, uid} = useParams();
+
+  let aa = useMatches()
+
+  let routeParams = useParams();
+  let lang = Object.keys(routeParams).includes('lang') && Object.keys(langs).includes(routeParams.lang) ? routeParams.lang : props.lang
+  let uid = Object.keys(routeParams).includes('uid') ? routeParams.uid : props.uid
 
   useEffect(() => {
     getPageData();
   }, [uid])
 
   const getPageData = async () => {
-    let res;
-    if(['index','home'].includes(uid) || typeof(uid) === undefined || uid === null) {
-      res = await client.getSingle('naslovna', { lang });
-    } else {
-      res = await client.getByUID('strana', uid, { lang });
-    }
+    let res = ['index','home'].includes(uid)
+      ? await client.getSingle('naslovna', { lang })
+      : await client.getByUID('strana', uid, { lang });
 
     await setPageData(res);
 
@@ -64,7 +66,7 @@ const App = props => {
       
       <Suspense fallback={<Spinner />}>
       {pageData.type === 'naslovna'
-        ? <Home />
+        ? <Home winWidth={winWidth} pageData={pageData} uid={pageData.uid} lang={pageData.lang} />
         : <Page winWidth={winWidth} pageData={pageData} uid={pageData.uid} lang={pageData.lang} />}
       </Suspense>
       </Layout>

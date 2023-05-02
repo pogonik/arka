@@ -19,6 +19,11 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
+    type: 'naslovna',
+    path: '/:lang?',
+    element: <App />
+  },
+  {
     type: 'strana',
     path: '/:lang?/:uid/*',
     element: <App  />

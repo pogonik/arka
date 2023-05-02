@@ -6,6 +6,7 @@ import Spinner from '../../components/Spinner'
 
 const Stanovi = ({ slice }) => {
 
+  const modalRef = useRef(null)
   const [showSlider, setShowSlider] = useState(false);
 
   let modalID = slice.id.replaceAll('#', '').replaceAll('$', '');
@@ -13,14 +14,17 @@ const Stanovi = ({ slice }) => {
   const showModal = () => {
     const myModal = new Modal(`#${modalID}`);
     myModal.show();
+    setShowSlider(true)
   };
 
+  useEffect(() => {
+    if(showSlider && slice.items.length)
+      modalRef.current.addEventListener('hidden.bs.modal', e => { setShowSlider(false) })
 
-  // useLayoutEffect(() => {
-  //   handleResize()
-  //   window.addEventListener('resize', handleResize)
-  //   return () => window.removeEventListener('resize', handleResize)
-  // }, []);
+    return () => {
+      // modalRef.current.removeEventListener('hidden.bs.modal', e => { setShowSlider(false) })
+    }
+  }, [showSlider]);
 
 
   let settings = {
@@ -71,7 +75,7 @@ const Stanovi = ({ slice }) => {
       </div>
     </div>
 
-    <div className="modal fade" id={modalID}>
+    <div className="modal fade" id={modalID} ref={modalRef}>
       <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-body">

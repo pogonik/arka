@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "__TYPE__": "GroupContentType",
+    "value": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "naslov",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "lady",
+              "type": "Text"
+            }
+          ],
+          [
+            "link",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "DocumentLink",
+                "id": "mock_document_id"
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}
