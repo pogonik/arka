@@ -23,7 +23,7 @@ export default function Footer(props) {
                   <img src="/icons/info-footer.svg" />
                 </div>
               </div>
-              <div className="col-8 tekst">tel: +381 25 123 456 <br/>mob: +381 60 123 456</div>
+              <div className="col-8 tekst d-flex align-items-center">tel: +381 63 70 28 527</div>
             </div>
             <div className="row">
               <div className="col-4 icon">

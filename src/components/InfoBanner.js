@@ -19,7 +19,7 @@ const InfoBanner = props => {
           </div>
           <div className="tekst desno">
             <h4>Telefon</h4>
-            <p>025 123 456, <br/>061 123 456</p>
+            <p>+381 63 70 28 527</p>
           </div>
         </div>
         <div className="col-12 col-sm-4 email">

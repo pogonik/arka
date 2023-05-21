@@ -18,7 +18,7 @@
             "label": "Sadržaj",
             "placeholder": "Sadržaj",
             "allowTargetBlank": true,
-            "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item,image,heading2"
+            "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,list-item,o-list-item,embed"
           }
         }
       },

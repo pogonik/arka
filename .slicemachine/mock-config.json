@@ -26,6 +26,16 @@
       "default": {
         "primary": {}
       }
+    },
+    "VideoEmbed": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Tekst": {
+      "default": {
+        "items": {}
+      }
     }
   },
   "_cts": {

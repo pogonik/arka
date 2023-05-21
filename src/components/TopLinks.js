@@ -57,7 +57,7 @@ const TopLinks = props => {
         </div>
         <div className='block'>
           <span className='icon'><Svg><PhoneSolidIcon fill="#fff" /></Svg></span>
-          <span className='info'>tel: +381 60 123 456</span>
+          <span className='info'>tel: +381 63 70 28 527</span>
         </div>
         <div className='block'>
           <span className='icon'><Svg><MailSolidIcon fill="#fff" /></Svg></span>
@@ -80,7 +80,7 @@ const TopLinks = props => {
             <li>
               <a className="dropdown-item" href="#">
                 <span className='icon'><Svg><PhoneSolidIcon fill="#fff" /></Svg></span>
-                <span className='info'>tel: +381 60 123 456</span>
+                <span className='info'>tel: +381 63 70 28 527</span>
               </a>
             </li>
             <li>

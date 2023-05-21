@@ -26,7 +26,7 @@ const Slider = props => {
           <hr/>
           <PrismicRichText field={itm.opis} />
           <PrismicLink className="read-more" field={itm.link}>
-            Pogledajte naše dosadašnje projekte <Svg><ArrowIcon fill="#fff" /></Svg>
+            {itm.dugme_tekst} <Svg><ArrowIcon fill="#fff" /></Svg>
           </PrismicLink>
         </div>
       </div>

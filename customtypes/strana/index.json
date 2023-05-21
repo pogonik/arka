@@ -60,6 +60,9 @@
             },
             "kontakt_forma": {
               "type": "SharedSlice"
+            },
+            "video_embed": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -213,7 +213,7 @@ interface StranaDocumentData {
  * Slice for *Strana → Slice Zone*
  *
  */
-type StranaDocumentDataSlicesSlice = Banner1Slice | TekstSlice | StanoviSlice | SlikaSlice | MaterijaliSlice | ProjektiSlice | FotoGalerijaSlice | KontaktFormaSlice;
+type StranaDocumentDataSlicesSlice = Banner1Slice | TekstSlice | StanoviSlice | SlikaSlice | MaterijaliSlice | ProjektiSlice | FotoGalerijaSlice | KontaktFormaSlice | VideoEmbedSlice;
 /**
  * Strana document from Prismic
  *
@@ -1082,11 +1082,50 @@ type TekstSliceVariation = TekstSliceDefault | TekstSliceTekstSaSlikom;
  *
  */
 export type TekstSlice = prismicT.SharedSlice<"tekst", TekstSliceVariation>;
+/**
+ * Primary content in VideoEmbed → Primary
+ *
+ */
+interface VideoEmbedSliceDefaultPrimary {
+    /**
+     * Element za ugradnju field in *VideoEmbed → Primary*
+     *
+     * - **Field Type**: Embed
+     * - **Placeholder**: *None*
+     * - **API ID Path**: video_embed.primary.embed
+     * - **Documentation**: https://prismic.io/docs/core-concepts/embed
+     *
+     */
+    embed: prismicT.EmbedField;
+}
+/**
+ * Default variation for VideoEmbed Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `VideoEmbed`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type VideoEmbedSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<VideoEmbedSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *VideoEmbed*
+ *
+ */
+type VideoEmbedSliceVariation = VideoEmbedSliceDefault;
+/**
+ * VideoEmbed Shared Slice
+ *
+ * - **API ID**: `video_embed`
+ * - **Description**: `VideoEmbed`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type VideoEmbedSlice = prismicT.SharedSlice<"video_embed", VideoEmbedSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { MainNavigationDocumentData, MainNavigationDocumentDataNavItem, MainNavigationDocument, NaslovnaDocumentData, NaslovnaDocumentDataSlicesSlice, NaslovnaDocument, StranaDocumentData, StranaDocumentDataSlicesSlice, StranaDocument, AllDocumentTypes, Banner1SliceDefaultPrimary, Banner1SliceDefault, Banner1SliceVariation, Banner1Slice, Banner2SliceDefaultPrimary, Banner2SliceDefault, Banner2SliceVariation, Banner2Slice, BannerTriptihSliceDefaultItem, BannerTriptihSliceDefault, BannerTriptihSliceVariation, BannerTriptihSlice, FotoGalerijaSliceDefaultItem, FotoGalerijaSliceDefault, FotoGalerijaSliceVariation, FotoGalerijaSlice, KontaktBannerSliceDefaultPrimary, KontaktBannerSliceDefault, KontaktBannerSliceVariation, KontaktBannerSlice, KontaktFormaSliceDefaultPrimary, KontaktFormaSliceDefault, KontaktFormaSliceVariation, KontaktFormaSlice, MaterijaliSliceDefaultPrimary, MaterijaliSliceDefaultItem, MaterijaliSliceDefault, MaterijaliSliceVariation, MaterijaliSlice, ProjektiSliceDefaultPrimary, ProjektiSliceDefaultItem, ProjektiSliceDefault, ProjektiSliceVariation, ProjektiSlice, SliderSliceDefaultItem, SliderSliceDefault, SliderSliceVariation, SliderSlice, SlikaSliceDefaultPrimary, SlikaSliceDefault, SlikaSliceVariation, SlikaSlice, StanoviSliceDefaultPrimary, StanoviSliceDefaultItem, StanoviSliceDefault, StanoviSliceVariation, StanoviSlice, TekstSliceDefaultItem, TekstSliceDefault, TekstSliceTekstSaSlikomPrimary, TekstSliceTekstSaSlikomItem, TekstSliceTekstSaSlikom, TekstSliceVariation, TekstSlice };
+        export type { MainNavigationDocumentData, MainNavigationDocumentDataNavItem, MainNavigationDocument, NaslovnaDocumentData, NaslovnaDocumentDataSlicesSlice, NaslovnaDocument, StranaDocumentData, StranaDocumentDataSlicesSlice, StranaDocument, AllDocumentTypes, Banner1SliceDefaultPrimary, Banner1SliceDefault, Banner1SliceVariation, Banner1Slice, Banner2SliceDefaultPrimary, Banner2SliceDefault, Banner2SliceVariation, Banner2Slice, BannerTriptihSliceDefaultItem, BannerTriptihSliceDefault, BannerTriptihSliceVariation, BannerTriptihSlice, FotoGalerijaSliceDefaultItem, FotoGalerijaSliceDefault, FotoGalerijaSliceVariation, FotoGalerijaSlice, KontaktBannerSliceDefaultPrimary, KontaktBannerSliceDefault, KontaktBannerSliceVariation, KontaktBannerSlice, KontaktFormaSliceDefaultPrimary, KontaktFormaSliceDefault, KontaktFormaSliceVariation, KontaktFormaSlice, MaterijaliSliceDefaultPrimary, MaterijaliSliceDefaultItem, MaterijaliSliceDefault, MaterijaliSliceVariation, MaterijaliSlice, ProjektiSliceDefaultPrimary, ProjektiSliceDefaultItem, ProjektiSliceDefault, ProjektiSliceVariation, ProjektiSlice, SliderSliceDefaultItem, SliderSliceDefault, SliderSliceVariation, SliderSlice, SlikaSliceDefaultPrimary, SlikaSliceDefault, SlikaSliceVariation, SlikaSlice, StanoviSliceDefaultPrimary, StanoviSliceDefaultItem, StanoviSliceDefault, StanoviSliceVariation, StanoviSlice, TekstSliceDefaultItem, TekstSliceDefault, TekstSliceTekstSaSlikomPrimary, TekstSliceTekstSaSlikomItem, TekstSliceTekstSaSlikom, TekstSliceVariation, TekstSlice, VideoEmbedSliceDefaultPrimary, VideoEmbedSliceDefault, VideoEmbedSliceVariation, VideoEmbedSlice };
     }
 }

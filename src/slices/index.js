@@ -12,6 +12,7 @@ import Slider from './Slider';
 import Slika from './Slika';
 import Stanovi from './Stanovi';
 import Tekst from './Tekst';
+import VideoEmbed from './VideoEmbed';
 
 export {
 	Banner1,
@@ -26,6 +27,7 @@ export {
 	Slika,
 	Stanovi,
 	Tekst,
+	VideoEmbed,
 };
 
 export const components = {
@@ -41,4 +43,5 @@ export const components = {
 	slika: Slika,
 	stanovi: Stanovi,
 	tekst: Tekst,
+	video_embed: VideoEmbed,
 };
