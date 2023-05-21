@@ -1,0 +1,35 @@
+{
+  "src/slices": {
+    "Stanovi": {
+      "default": {
+        "items": {}
+      }
+    },
+    "Projekti": {
+      "default": {
+        "items": {},
+        "primary": {}
+      }
+    },
+    "BannerTriptih": {
+      "default": {
+        "items": {},
+        "primary": {}
+      }
+    },
+    "Banner2": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Banner1": {
+      "default": {
+        "primary": {}
+      }
+    }
+  },
+  "_cts": {
+    "strana": {},
+    "naslovna": {}
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "banner2",
+  "type": "SharedSlice",
+  "name": "Banner2",
+  "description": "Banner2",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Banner2",
+      "primary": {
+        "naslov": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Naslov",
+            "placeholder": "Naslov",
+            "allowTargetBlank": true,
+            "single": "heading2,strong"
+          }
+        },
+        "tekst": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Tekst",
+            "placeholder": "Tekst",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,hyperlink,em"
+          }
+        },
+        "link": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Link",
+            "placeholder": "Upišite i linkujte tekst",
+            "allowTargetBlank": true,
+            "single": "hyperlink"
+          }
+        },
+        "slika": {
+          "type": "Image",
+          "config": {
+            "label": "Slika za pozadinu",
+            "constraint": {
+              "width": 1920,
+              "height": 525
+            },
+            "thumbnails": []
+          }
+        },
+        "boja": {
+          "type": "Color",
+          "config": {
+            "label": "Boja pozadine",
+            "placeholder": "Izaberite boju pozadine banera"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

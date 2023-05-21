@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { PrismicRichText, PrismicImage } from '@prismicio/react'
 import SlickSlider from "react-slick";
 import { Modal } from 'bootstrap';
@@ -7,7 +7,7 @@ import Spinner from '../../components/Spinner'
 const Stanovi = ({ slice }) => {
 
   const modalRef = useRef(null)
-  const [showSlider, setShowSlider] = useState(false);
+  const [showSlider, setShowSlider] = useState(slice.items.length);
 
   let modalID = slice.id.replaceAll('#', '').replaceAll('$', '');
 
@@ -18,7 +18,7 @@ const Stanovi = ({ slice }) => {
   };
 
   useEffect(() => {
-    if(showSlider && slice.items.length)
+    if(showSlider)
       modalRef.current.addEventListener('hidden.bs.modal', e => { setShowSlider(false) })
 
     return () => {
@@ -57,7 +57,7 @@ const Stanovi = ({ slice }) => {
       <div className='col col-12 col-md-3'>
         <div className='slika'>
           <div className='ratio'>
-            {slice.items.length ? <PrismicImage imgixParams={{w:600,h:400}} className="img-fluid" field={slice.items[0].slika} /> : null}
+            {slice.items.length ? <PrismicImage imgixParams={{w:600,h:400}} className="img-fluid" field={slice.items[0].slika} /> : <img src="/no-img.svg" className="img-fluid" />}
           </div>
         </div>
       </div>
@@ -68,14 +68,15 @@ const Stanovi = ({ slice }) => {
             <PrismicRichText field={slice.primary.opis}/>
           </div>
 
-          <div className='text-end'>
+          {slice.items.length ? <div className='text-end'>
             <button className='btn btn-primary' onClick={showModal}>{fotoText[slice.lang]}</button>
-          </div>
+          </div> : null}
+
         </div>
       </div>
     </div>
 
-    <div className="modal fade" id={modalID} ref={modalRef}>
+    {slice.items.length ? <div className="modal fade" id={modalID} ref={modalRef}>
       <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-body">
@@ -84,7 +85,7 @@ const Stanovi = ({ slice }) => {
           <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
         </div>
       </div>
-    </div>
+    </div> : null}
 
   </div>
 }

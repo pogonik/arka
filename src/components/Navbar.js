@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import {
   Svg,
   LogoTop,
-  TwitterIcon,
+  YouTubeIcon,
   FacebookIcon,
   InstagramIcon,
   ZgradaIcon
@@ -67,9 +67,9 @@ const Navbar = props => {
               <MainNav className='navbar-nav nav' lang={props.lang} url={props.url} uid={props.uid} />
 
               <footer className='navbar-footer soc-links'>
-                <a href='#'><Svg fill="#254260" viewBox="0 0 44 36"><TwitterIcon /></Svg></a>
                 <a href='#'><Svg fill="#254260" viewBox="0 0 42 42"><FacebookIcon /></Svg></a>
-                <a href='#'><Svg fill="#254260" viewBox="0 0 42 42"><InstagramIcon /></Svg></a>
+                <a href='https://www.youtube.com/@ARKAIzgradnja'><Svg fill="#254260" viewBox="0 0 42 28"><YouTubeIcon /></Svg></a>
+                <a href='https://www.instagram.com/arkaizgradnja'><Svg fill="#254260" viewBox="0 0 42 42"><InstagramIcon /></Svg></a>
               </footer>
 
             </div>

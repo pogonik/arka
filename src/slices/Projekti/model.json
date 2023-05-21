@@ -22,9 +22,16 @@
           "type": "StructuredText",
           "config": {
             "label": "Naslov",
-            "placeholder": "Naslov",
+            "placeholder": "Naslov / Naziv projekta",
             "allowTargetBlank": true,
             "single": "heading2"
+          }
+        },
+        "datum": {
+          "type": "Date",
+          "config": {
+            "label": "Datum realizacije",
+            "placeholder": "Datum realizacije projekta"
           }
         },
         "opis": {
@@ -38,11 +45,11 @@
         }
       },
       "items": {
-        "slika": {
+        "slike": {
           "type": "Link",
           "config": {
-            "label": "Slika",
-            "placeholder": "Slika",
+            "label": "Slike",
+            "placeholder": "Slike projekta",
             "select": "media"
           }
         }

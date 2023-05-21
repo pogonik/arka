@@ -31,14 +31,6 @@
         }
       },
       "items": {
-        "slike": {
-          "type": "Image",
-          "config": {
-            "label": "Slike",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
         "slika": {
           "type": "Link",
           "config": {

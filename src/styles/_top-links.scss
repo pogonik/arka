@@ -31,6 +31,14 @@
       &:last-child {
         margin-right: 0;
       }
+
+      &.youtube {
+        width: 1.75rem;
+
+        & > svg {
+          width: 1.75rem;
+        }
+      }
     }
   }
 

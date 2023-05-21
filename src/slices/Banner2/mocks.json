@@ -1,0 +1,73 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "naslov": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "heading2",
+            "content": {
+              "text": "Spread"
+            }
+          }
+        ]
+      },
+      "tekst": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Veniam ipsum mollit ut ex proident duis."
+            }
+          }
+        ]
+      },
+      "link": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Nulla ad Lorem sunt commodo. Aute adipisicing culpa id qui irure elit. Velit in adipisicing ad anim adipisicing excepteur in proident aliqua do do est nostrud officia ullamco."
+            }
+          }
+        ]
+      },
+      "slika": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055",
+          "width": 3277,
+          "height": 4092
+        },
+        "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?rect=0%2C1598%2C3277%2C896&w=1920&h=525",
+        "width": 1920,
+        "height": 525,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 1598
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      },
+      "boja": {
+        "__TYPE__": "FieldContent",
+        "value": "#de9c03",
+        "type": "Color"
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]

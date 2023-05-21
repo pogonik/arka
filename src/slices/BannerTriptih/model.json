@@ -1,0 +1,57 @@
+{
+  "id": "banner_triptih",
+  "type": "SharedSlice",
+  "name": "BannerTriptih",
+  "description": "BannerTriptih",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "BannerTriptih",
+      "primary": {},
+      "items": {
+        "slika": {
+          "type": "Image",
+          "config": {
+            "label": "Slika",
+            "constraint": {
+              "width": 600,
+              "height": 600
+            },
+            "thumbnails": []
+          }
+        },
+        "naslov": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Naslov",
+            "placeholder": "Naslov",
+            "allowTargetBlank": false,
+            "single": "heading3"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "select": "document",
+            "customtypes": [
+              "strana"
+            ]
+          }
+        },
+        "ikonica": {
+          "type": "Link",
+          "config": {
+            "label": "Ikonica",
+            "placeholder": "Ikonica pored naslova",
+            "select": "media"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

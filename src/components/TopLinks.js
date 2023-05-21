@@ -6,7 +6,7 @@ import {
   PhoneSolidIcon,
   MailSolidIcon,
   GlobeIcon,
-  TwitterIcon,
+  YouTubeIcon,
   FacebookIcon,
   InstagramIcon
 } from './Icons'
@@ -112,9 +112,9 @@ const TopLinks = props => {
           </div>
 
           <div className='col-2 right'>
-            <a href='#'><Svg fill="#fff" viewBox="0 0 44 36"><TwitterIcon /></Svg></a>
-            <a href='#'><Svg fill="#fff" viewBox="0 0 42 42"><FacebookIcon /></Svg></a>
-            <a href='#'><Svg fill="#fff" viewBox="0 0 42 42"><InstagramIcon /></Svg></a>
+            <a href='#' className="facebook"><Svg fill="#fff" viewBox="0 0 42 42"><FacebookIcon /></Svg></a>
+            <a href='https://www.youtube.com/@ARKAIzgradnja' className="youtube"><Svg fill="#fff" viewBox="0 0 40 28"><YouTubeIcon /></Svg></a>
+            <a href='#' className="instagram"><Svg fill="#fff" viewBox="0 0 42 42"><InstagramIcon /></Svg></a>
           </div>
 
         </div>

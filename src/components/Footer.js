@@ -42,10 +42,10 @@ export default function Footer(props) {
             </div>
             <div className="row mt-4 me-2">
               <div className="col soc-icons d-flex justify-content-between">
-                <a href="/" className="ratio ratio-1x1 instagram">
+                <a href="https://www.instagram.com/arkaizgradnja" className="ratio ratio-1x1 instagram">
                   <img src="/icons/soc-icons-footer.svg" />
                 </a>
-                <a href="/" className="ratio ratio-1x1 twitter">
+                <a href="https://www.youtube.com/@ARKAIzgradnja" className="ratio ratio-1x1 youtube">
                   <img src="/icons/soc-icons-footer.svg" />
                 </a>
                 <a href="/" className="ratio ratio-1x1 facebook">

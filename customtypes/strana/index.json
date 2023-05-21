@@ -12,13 +12,6 @@
           "placeholder": ""
         }
       },
-      "naziv": {
-        "type": "Text",
-        "config": {
-          "label": "Naziv strane (za navigaciju)",
-          "placeholder": "Naziv strane (za navigaciju)"
-        }
-      },
       "naslov": {
         "type": "StructuredText",
         "config": {

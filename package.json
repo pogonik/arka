@@ -28,8 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "slicemachine": "start-slicemachine",
-    "postbuild": "for i in $(grep -Rl $key public); do sed -i '' -e \"s/$key/REVOKED/g\" $i; done"
+    "slicemachine": "start-slicemachine"
   },
   "eslintConfig": {
     "extends": [

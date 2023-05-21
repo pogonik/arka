@@ -4,10 +4,20 @@ import { useForm, ValidationError } from '@formspree/react';
 
 const ContactForm = props => {
 
-  const [state, handleSubmit] = useForm("mayzadaz");
+  const [submit, handleSubmit] = useForm("mayzadaz");
   
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+  if (submit.succeeded) {
+    return (
+      <div className="container">
+        <div className="row p-5">
+          <div className="col">
+            <p>Hvala Vam što ste nas kontaktirali!</p>
+            <p>Uskoro će vam stići odgovor na vaš email.</p>
+            <p>ARKA - Izgradnja i adaptacija</p>
+          </div>
+        </div>
+      </div>
+    )
   }
   
   return (
@@ -28,7 +38,7 @@ const ContactForm = props => {
             <div className="col">
               <input type="email" className="form-control" placeholder="E-mail" name="email" id="email" />
             </div>
-            <ValidationError prefix="Email" field="email" errors={state.errors}/>
+            <ValidationError prefix="Email" field="email" errors={submit.errors}/>
           </div>
 
           <div className="row mb-5">
@@ -38,12 +48,12 @@ const ContactForm = props => {
                 <label htmlFor="message">Tekst poruke</label>
               </div>
             </div>
-            <ValidationError prefix="Message" field="message" errors={state.errors}/>
+            <ValidationError prefix="Message" field="message" errors={submit.errors}/>
           </div>
 
           <div className="row">
             <div className="col text-center">
-              <button type="submit" id="form-submit" className="btn btn-primary btn-submit" disabled={state.submitting}>Pošalji poruku</button>
+              <button type="submit" id="form-submit" className="btn btn-primary btn-submit" disabled={submit.submitting}>Pošalji poruku</button>
             </div>
           </div>
 

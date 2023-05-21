@@ -12,12 +12,10 @@
       "description": "Banner1",
       "primary": {
         "podnaslov": {
-          "type": "StructuredText",
+          "type": "Text",
           "config": {
             "label": "Podnaslov",
-            "placeholder": "Podnaslov",
-            "allowTargetBlank": true,
-            "single": "heading4"
+            "placeholder": "Podnaslov"
           }
         },
         "naslov": {
@@ -29,13 +27,22 @@
             "single": "heading2"
           }
         },
-        "sadrzaj": {
+        "tekst": {
           "type": "StructuredText",
           "config": {
-            "label": "Sadržaj",
-            "placeholder": "Sadržaj",
+            "label": "Tekst",
+            "placeholder": "Tekst",
             "allowTargetBlank": true,
-            "single": "paragraph,list-item,o-list-item,strong,em"
+            "multi": "paragraph,strong,em,list-item,o-list-item"
+          }
+        },
+        "link": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Link",
+            "placeholder": "Upišite i linkujte tekst",
+            "allowTargetBlank": true,
+            "single": "hyperlink"
           }
         },
         "slika": {
@@ -46,20 +53,11 @@
             "thumbnails": []
           }
         },
-        "boja_pozadine": {
+        "boja": {
           "type": "Color",
           "config": {
             "label": "Boja pozadine",
-            "placeholder": "Boja pozadine"
-          }
-        },
-        "link": {
-          "type": "Link",
-          "config": {
-            "label": "Link",
-            "placeholder": "Link",
-            "allowTargetBlank": true,
-            "select": null
+            "placeholder": "Izaberite boju pozadine banera"
           }
         }
       },

@@ -33,13 +33,20 @@
     .card {
       display: flex;
       flex-direction: row;
-      box-shadow: 0 0 10px rgba(0,0,0,.35);
       border: 0;
       padding: 1rem;
       border-radius: .65rem;
 
+      @include media-breakpoint-up(md) {
+        box-shadow: 0 0 10px rgba(0,0,0,.35);
+      }
+
       .card-body {
-        padding: .5rem 1rem .5rem .5rem;
+        padding: .5rem 1rem;
+
+        @include media-breakpoint-up(md) {
+          padding: .5rem 1rem .5rem .5rem;
+        }
       }
 
       .slika {

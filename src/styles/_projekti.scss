@@ -1,0 +1,77 @@
+.projekti {
+  .projekat {
+
+    h3.podnaslov {
+      background: $red;
+      color: $white;
+      text-transform: uppercase;
+      padding: .5rem .75rem;
+      font-size: 1rem;
+      font-family: "Barlow Semi Condensed";
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      min-width: 75%;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: $blue;
+      font-size: 2.5rem;
+      font-family: "Barlow Semi Condensed";
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 1.75rem;
+
+      @include media-breakpoint-up(lg) {
+        // font-size: 3.5rem;
+      }
+    }
+
+    .card {
+      box-shadow: 0 0 12px #666;
+      margin-bottom: 2rem;
+      padding: 1rem 2rem;
+    }
+
+    .slick-slider {
+      .slick-arrow {
+        width: 25px;
+        height: 50px;
+        opacity: .5;
+        background-size: cover;
+
+        @media (max-width: 768px) {
+          &.slick-next {
+            right: 10px;
+          }
+
+          &.slick-prev {
+            left: 10px;
+          }
+        }
+      }
+
+      .slick-prev {
+        background: url('../../public/icons/prev-dark-arrow.svg') center center no-repeat;
+        left: 5px;
+        z-index: 100;
+
+        &:hover {
+          background: url('../../public/icons/prev-dark-arrow.svg') center center no-repeat;
+          opacity: 1;
+        }
+      }
+      .slick-next {
+        background: url('../../public/icons/next-dark-arrow.svg') center center no-repeat;
+        right: 5px;
+        z-index: 100;
+
+        &:hover {
+          background: url('../../public/icons/next-dark-arrow.svg') center center no-repeat;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

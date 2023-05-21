@@ -1,7 +1,7 @@
 export let lang = 'sr-rs';
 
-// export const base_url = 'https://www.arkaizgradnja.com';
-export const base_url = 'localhost:3000';
+export const base_url = 'https://www.arkaizgradnja.com';
+// export const base_url = 'localhost:3000';
 
 export const siteName = {
   'sr-rs': 'ARKA - Izgradnja i adaptacija',

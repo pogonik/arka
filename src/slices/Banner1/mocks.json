@@ -4,15 +4,9 @@
     "variation": "default",
     "primary": {
       "podnaslov": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading4",
-            "content": {
-              "text": "Point"
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "cap",
+        "type": "Text"
       },
       "naslov": {
         "__TYPE__": "StructuredTextContent",
@@ -21,17 +15,6 @@
             "type": "heading2",
             "content": {
               "text": "Aware"
-            }
-          }
-        ]
-      },
-      "sadrzaj": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Velit eiusmod dolor ut dolore minim nisi commodo sint. Ea proident consequat et laborum. In deserunt eu magna minim deserunt exercitation nisi voluptate."
             }
           }
         ]
@@ -59,17 +42,32 @@
         "__TYPE__": "ImageContent",
         "thumbnails": {}
       },
-      "boja_pozadine": {
-        "__TYPE__": "FieldContent",
-        "value": "#c9e1fc",
-        "type": "Color"
-      },
       "link": {
-        "__TYPE__": "LinkContent",
-        "value": {
-          "__TYPE__": "ExternalLink",
-          "url": "http://google.com"
-        }
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Nostrud ex fugiat cillum anim exercitation adipisicing laborum consequat labore anim. Tempor dolore esse eiusmod aliqua aliquip elit veniam ipsum cupidatat ullamco. Magna adipisicing ullamco nostrud mollit excepteur amet est reprehenderit sit minim duis esse."
+            }
+          }
+        ]
+      },
+      "tekst": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Veniam sint dolore cillum sunt. Nisi do culpa adipisicing ut culpa consequat ex officia. Nisi aute irure commodo."
+            }
+          }
+        ]
+      },
+      "boja": {
+        "__TYPE__": "FieldContent",
+        "value": "#120673",
+        "type": "Color"
       }
     },
     "items": [

@@ -9,7 +9,7 @@
           {
             "type": "heading2",
             "content": {
-              "text": "Locate"
+              "text": "Different"
             }
           }
         ]
@@ -29,6 +29,11 @@
         "__TYPE__": "FieldContent",
         "value": "middle",
         "type": "Text"
+      },
+      "datum": {
+        "__TYPE__": "FieldContent",
+        "type": "Date",
+        "value": "2019-09-25"
       }
     },
     "items": [
@@ -36,7 +41,7 @@
         "__TYPE__": "GroupItemContent",
         "value": [
           [
-            "slika",
+            "slike",
             {
               "__TYPE__": "LinkContent",
               "value": {

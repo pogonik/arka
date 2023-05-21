@@ -9,7 +9,7 @@ import ContactForm from '../../components/ContactForm'
  * @param { KontaktFormaProps }
  */
 const KontaktForma = ({ slice }) => (
-  <ContactForm />
+  <ContactForm lang={slice.lang} />
 )
 
 export default KontaktForma
