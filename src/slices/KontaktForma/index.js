@@ -1,5 +1,4 @@
 import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
 
 import ContactForm from '../../components/ContactForm'
 

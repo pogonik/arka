@@ -1,5 +1,3 @@
-import { useRef } from "react"
-
 import {
   Svg,
   HouseSolidIcon,
@@ -14,8 +12,6 @@ import {
 import useOutsideClick from "./useOutsideClick";
 
 import { Dropdown } from 'bootstrap';
-
-import { encodeHTMLEntities, decodeHTMLEntities } from "../utils/lib";
 
 const TopLinks = props => {
 

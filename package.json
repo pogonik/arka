@@ -2,6 +2,7 @@
   "name": "arka",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.arkaizgradnja.com",
   "dependencies": {
     "@formspree/react": "^2.4.1",
     "@prismicio/client": "^6.7.3",

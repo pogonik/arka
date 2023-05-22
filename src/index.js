@@ -4,13 +4,11 @@ import ReactDOM from 'react-dom/client';
 // import reportWebVitals from './reportWebVitals';
 
 import { PrismicProvider } from '@prismicio/react'
-import prismic, { getSingle, getByUID } from '@prismicio/client'
 import { client } from './prismicio'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 
 import App from './App';
-import Home from './pages/Home';
 
 const router = createBrowserRouter([
   {

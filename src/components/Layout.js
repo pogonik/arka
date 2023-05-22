@@ -1,4 +1,3 @@
-// import Head from 'next/head'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
@@ -10,8 +9,6 @@ const Layout = props => {
 
   return (
     <>
-      {/* <Head {...props.meta} /> */}
-
       <main id="content" className={classMain}>
 
         <Navbar winWidth={props.winWidth} url={props.url} uid={props.uid} lang={props.lang} prevod={props.prevod} allPages={props.allPages} />

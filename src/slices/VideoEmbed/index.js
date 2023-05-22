@@ -1,5 +1,4 @@
 import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
 
 // /**
 //  * @typedef {import("@prismicio/client").Content.VideoEmbedSlice} VideoEmbedSlice

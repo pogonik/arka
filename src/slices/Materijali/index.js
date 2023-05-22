@@ -10,14 +10,6 @@ import SlickSlider from "react-slick";
  */
 const Materijali = ({ slice }) => {
 
-  // const sliderRef = useRef(null)
-
-  // const [currentSlide, setCurrentSlide] = useState(0);
-
-  // useEffect(() => {
-  //   sliderRef.current.slickGoTo(currentSlide);
-  // }, [currentSlide])
-
   let settings = {
     dots: true,
     infinite: true,
@@ -37,7 +29,6 @@ const Materijali = ({ slice }) => {
     let slajds = slice.items.map((itm,i) => {
       return (<div className="slide" key={`slide-${i}`}>
         <PrismicImage className="img-fluid slide-img" field={itm.slike} />
-        {/* <img className="img-fluid slide-img" src={itm.slike.url} /> */}
       </div>)
     })
 

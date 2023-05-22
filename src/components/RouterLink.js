@@ -4,12 +4,8 @@ import { Link } from "react-router-dom";
 
 const RouterLink = props => {
 
-  // const LinkShim = ({ href, ...props }) => {
-	//   return <Link to={href} {...props} />;
-  // };
   const fieldProps = {
     link_type: prismicT.LinkType.Document,
-    // link_type: "Document",
   	url: "/",
     id: "",
     uid: ''
